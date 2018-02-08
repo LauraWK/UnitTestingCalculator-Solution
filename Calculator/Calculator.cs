@@ -37,7 +37,8 @@ namespace Calculator
 
         public double Divide(double a, double b)
         {
-            return a / b;
+            result= a / b;
+            return result;
         }
     }
 

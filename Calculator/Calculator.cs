@@ -40,6 +40,11 @@ namespace Calculator
             result= a / b;
             return result;
         }
+
+        public void Clear()
+        {
+            Accumulator = 0;
+        }
     }
 
 }

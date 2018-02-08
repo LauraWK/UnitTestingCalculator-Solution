@@ -108,7 +108,7 @@ namespace Calculator.Test.Unit
             Assert.That(_uut.Accumulator,Is.EqualTo(result));
         }
 
-        [TestCase(10, 2, 7)]
+        [TestCase(10, 2, 5)]
         [TestCase(4, 2, 2)]
         [TestCase(20, 2, 10)]
         public void Accumulator_Div_ResultIsCorrect(double a, double b, double result)

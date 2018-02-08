@@ -5,40 +5,34 @@ namespace Calculator
     public class Calculator
     {
         public double Accumulator { get; private set; }
-        private double result;
         public double Add(double a, double b)
         {
-            result = a + b;
-            return result;
+            Accumulator = a + b;
+            return Accumulator;
         }
 
         public double Subtract(double a, double b)
         {
-            result= a - b;
-            return result;
+            Accumulator= a - b;
+            return Accumulator;
         }
 
         public double Multiply(double a, double b)
         {
-            result = a * b;
-            return result;
+            Accumulator = a * b;
+            return Accumulator;
         }
 
         public double Power(double a, double b)
         {
-            result = Math.Pow(a, b);
-            return result;
-        }
-
-        public double Accumulat()
-        {
-            return result;
+            Accumulator = Math.Pow(a, b);
+            return Accumulator;
         }
 
         public double Divide(double a, double b)
         {
-            result= a / b;
-            return result;
+            Accumulator= a / b;
+            return Accumulator;
         }
     }
 

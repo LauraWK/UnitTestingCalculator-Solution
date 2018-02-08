@@ -72,5 +72,14 @@ namespace Calculator.Test.Unit
         {
             Assert.That(_uut.Divide(a,b),Is.EqualTo(result));
         }
+
+        [TestCase(2, 2, 4)]
+        [TestCase(3, 5, 8)]
+        [TestCase(4, 7, 11)]
+        public void Accumulator_Add_ResultIsCorrect(double a, double b, double result)
+        {
+            _uut.Add(a, b);
+            Assert.That(_uut.Accumulator,Is.EqualTo(result));
+        }
     }
 }
